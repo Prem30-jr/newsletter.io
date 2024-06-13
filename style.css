@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+:root {
+    --bg-color: #36385D;
+    --font-color: #60606A;
+    --btn-color: #232742;
+}
+
+body {
+    background: var(--bg-color);
+    width: 100%;
+}
+
+.body {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 18px;
+    height: 550px;
+    margin-top: 100px;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+.content {
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.content h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--bg-color);
+}
+.content p{
+    color: var(--font-color);
+    white-space: pre-line;
+    line-height: 30px;
+    font-weight: 500;
+}
+.img-section {
+    float: right;
+}
+
+.img-section img {
+    height: 500px;
+}
+.list-section{
+    margin-top: 20px;
+}
+.list-section p{
+    margin-left: 20px;
+}
+.list-section img{
+    margin-top: 1px;
+}
+.list-section img,p{
+    display: inline;
+}
+.email{
+    margin-top: 20px;
+}
+.email p{
+    font-weight: 600;
+    color: var(--btn-color);
+}
+.email input{
+    padding: 12px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #D5D9D9;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn button{
+    background-color: var(--btn-color);
+    color: #fff;
+    padding: 14px;
+    font-weight: 600;
+    width: 90%;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid var(--btn-color);
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: 'Arial',sans-serif;
+}
+body{
+    background: var(--bg-color);
+}
+:root {
+    --bg-color: #36385D;
+    --font-color: #60606A;
+    --btn-color: #232742;
+}
+.body{
+    background: #fff;
+    width: 33%;
+    margin-top: 10%;
+    margin-left: 33%;
+    border-radius: 18px;
+    padding: 20px;
+}
+.tick img{
+    width: 50px;
+    margin-top: 10px;
+}
+.inside-body{
+    margin-left: 30px;
+}
+.content-section h1{
+    margin-top: 20px;
+    white-space: pre-line;
+    font-size: 40px;
+    color:var(--btn-color);
+}
+.content-section p{
+    color: var(--btn-color);
+    line-height: 25px;
+    font-size: 14px;
+    white-space: pre-line;
+    margin-top: 20px;
+}
+.btn-section button{
+    padding: 15px;
+    background: var(--btn-color);
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid var(--btn-color);
+    cursor: pointer;
+    font-weight: 600;
+}

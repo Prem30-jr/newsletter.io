@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateEmail() {
+            var emailField = document.getElementById("email-id");
+            var email = emailField.value;
+            var errorMessage = document.getElementById("error-message");
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (!emailPattern.test(email)) {
+                errorMessage.style.display = "inline";
+                emailField.style.backgroundColor = "#FFCCCC";
+                emailField.style.color = "red";
+                emailField.style.borderColor = "red";
+                return false;
+            } else {
+                errorMessage.style.display = "none";
+                return true;
+            }
+        }
+
+        function handleSubmit(event) {
+            if (!validateEmail()) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="body">
+        <div class="content">
+            <h1>Stay Updated!</h1><br>
+            <p>Join 60,000+ product managers receiving monthly 
+                updates on:</p>
+            <div class="list-section">
+                <img src="images/icon-list.svg"><p>Product discovery and building what matters</p><br>
+                <img src="images/icon-list.svg"><p>Measuring to ensure updates are a success</p><br>
+                <img src="images/icon-list.svg"><p>And much more!</p>
+            </div>
+            <div class="email">
+                <p>Email Address</p><p id="error-message" style="font-size:14px; color: red; display: none; margin-left: 32%;">Valid email required</p>
+                <input type="email" id="email-id" name="email-id" placeholder="email@company.com" required>
+                
+            </div>
+            <div class="btn">
+                <button onclick="handleSubmit(event)">Subscribe to monthly newsletter</button>
+            </div>
+        </div>
+        <div class="img-section">
+            <img src="images/illustration-sign-up-desktop.svg">
+        </div>
+    </div><br><br><br>
+</body>
+</html>
